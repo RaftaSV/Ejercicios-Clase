@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         //calculoSalario
        // tabla(2)
         //Empleado()
-        var dado =  Dado(7)
+        var dado =  Dado(2)
         dado.valor
         dado.tirar()
         dado.imprimir()
@@ -55,6 +55,7 @@ class MainActivity : AppCompatActivity() {
     // Ejercicio
 
     class Dado(valor: Int){
+
         var valor: Int = 1
             set(valor) {
 
@@ -69,7 +70,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         fun tirar() {
-            valor = ((Math.random() * 6) + 1).toInt()
+            valor = ((Math.random() * 6)).toInt()
         }
 
         fun imprimir() = println("Valor del dado: $valor")
