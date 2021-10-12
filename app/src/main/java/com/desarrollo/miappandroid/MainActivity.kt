@@ -10,10 +10,11 @@ class MainActivity : AppCompatActivity() {
         //calculoSalario
        // tabla(2)
         //Empleado()
-        var dado =  Dado(2)
-        dado.valor
-        dado.tirar()
-        dado.imprimir()
+      //  var dado =  Dado(2)
+        //dado.valor
+        //dado.tirar()
+        //dado.imprimir()
+        automovil()
 
     }
 
@@ -76,6 +77,16 @@ class MainActivity : AppCompatActivity() {
         fun imprimir() = println("Valor del dado: $valor")
     }
 
+    fun automovil(){
+        var toyota: Automovil= Automovil("Toyota","Negro",12000)
+
+        println("la marca del vehiculo es ${toyota.marca} su color es ${toyota.color}")
+        println("su precio es $${toyota.precio}")
+
+        var honda = Automovil("honda","Blanco",21000)
+        honda.encender()
+
+    }
 
 
 
